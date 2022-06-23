@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+   /*Primary color*/
+   --Pale-blue: hsl(225, 100%, 94%);
+   --Bright-blue: hsl(245, 75%, 52%);
+
+   /*Neutral color*/
+   --Very-pale-blue: hsl(225, 100%, 98%);
+   --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+
+   /*Font Style*/
+   --fonts-main: 'Red Hat Display', sans-serif;
+}
+  /*Overrides margins and padding to remove whitespace*/
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--fonts-main);
+    line-height: 1.45;
+    cursor: pointer;
+  }
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    background-color: var(--Pale-blue);
+  }
+
+  .container {
+    max-width: 420px;
+    min-height: 660px;
+    padding: 0px;
+    background-color: var(--Very-pale-blue);
+    box-shadow: 0px 25px 50px rgba(121, 101, 180, 0.095);
+    border-radius: 20px;
+    -webkit-border-radius: 15px; /*google chrome prefix*/
+    -moz-border-radius: 15px; /*mozilla firefox prefix*/
+    -o-border-radius: 15px; /*Opera prefix*/
+  }
+
+  .container img {
+    width: 420px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+  }
+
+  .text {
+    text-align: center;
+    position: relative;
+    top: 30px;
+  }
+  
+  .text h2 {
+    font-weight: 900;
+    padding: 10px;
+  }
+
+  .text p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--Desaturated-blue);
+    padding: 20px;
+  }
+
+  .payment-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    background-color: rgb(252, 242, 249);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    
+  }
+
+  .payment-plan svg {
+   margin: auto;
+  }
+
+  .annual {
+    font-weight: 900;
+  }
+
+  .pricing {
+    font-weight: 300;
+    color: var(--Desaturated-blue);
+  }
+
+  .change {
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 30%;
+    color: var(--Bright-blue);
+
+  }
+
+  .btn-payment {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    padding: 14px 0;
+    font-weight: 900;
+    width: 75%;
+    background-color: var(--Bright-blue);
+    color: white;
+    border: 0px;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px rgba(85, 13, 242, 0.19);
+    cursor: pointer;
+  }
+
+  .btn-payment:hover {
+    color:aqua;
+  }
+
+  .btn-cancel:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .btn-cancel {
+    display: inline;
+    margin: 5px 20px 70px 13px; 
+    border-radius: 11px;
+    border: 0;
+    font-weight: 900;
+    background-color: var(--Very-pale-blue);
+    color: var(--Desaturated-blue);
+
+  }
+  
+  footer {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
